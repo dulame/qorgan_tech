@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+.github
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+test_password_tracking.py
+.pytest_cache/
+
+# Documentation
+*.md
+docs/
+
+# Logs (will be created at runtime)
+logs/
+
+# Database (will be created at runtime)
+data/bot.db
+
+# Environment (loaded from .env at runtime)
+.env
+.env.local
