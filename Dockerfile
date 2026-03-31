@@ -23,12 +23,14 @@ RUN pip install --upgrade pip && \
 # Copy project files
 COPY . .
 
-# Create necessary directories
-RUN mkdir -p data logs
+# Create necessary directories with proper permissions
+RUN mkdir -p data logs && \
+    chmod 755 data logs
 
 # Create non-root user for security
 RUN useradd -m -u 1000 botuser && \
-    chown -R botuser:botuser /app
+    chown -R botuser:botuser /app && \
+    chmod -R u+rwX /app/data /app/logs
 
 USER botuser
 
