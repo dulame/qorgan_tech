@@ -1,5 +1,5 @@
 # Multi-stage build for Qorgan Tech Security Bot
-FROM python:3.12.1-slim
+FROM python:3.11-slim
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
